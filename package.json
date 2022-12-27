@@ -1,0 +1,12 @@
+{
+  "name": "wc3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "demo": "pnpm -F @wc3/demo dev"
+  },
+  "keywords": [],
+  "author": "Grant Forrest",
+  "license": "ISC"
+}
