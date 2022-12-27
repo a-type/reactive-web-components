@@ -20,7 +20,7 @@ Accepts multiple Signal dependencies and re-runs the provided callback with thei
 
 ### Slot
 
-A name for a Signal which holds a Function. Special only because you can use the special `connect(signal, slot)` function to 'wire up' a Signal to a Slot which utilizes it.
+A name for a Signal which holds a Function. Special only because you can use the `connect(signal, slot)` function to 'wire up' a Signal to a Slot which utilizes it. You could guess how this is composed - it uses an `effect((fn, input) => fn(input), [fn, input])`.
 
 Whenever either the Signal or Slot change, the Slot will be re-run with the latest value.
 
